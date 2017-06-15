@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fill_rel"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+
+        <ImageView
+            android:id="@+id/quote_bg_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/blue"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/quote_text"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wall_rel"
+        android:layout_below="@+id/fill_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/blue_button"
+            android:background="#0000ff"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <Button
+            android:id="@+id/black_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/blue_button"
+            />
+
+        <Button
+            android:id="@+id/red_button"
+            android:layout_toRightOf="@+id/black_button"
+            android:layout_marginLeft="10dp"
+            android:background="#ff0000"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <Button
+            android:id="@+id/gold_button"
+            android:layout_toRightOf="@+id/red_button"
+            android:layout_marginLeft="10dp"
+            android:background="#DAA520"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+    </RelativeLayout>
+    
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wall_rel"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/post_image"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="post"
+        android:background="#7CFC00"
+        />
+
+</RelativeLayout>

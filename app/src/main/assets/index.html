@@ -1,0 +1,60 @@
+<doctype! html>
+<html>
+	<head>
+		<title>No Internet Connection</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				font-family: 'Open Sans';
+			}
+			
+			body {
+				background-color: #ececec;
+			}
+
+			.outer-container {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				padding: 5px;
+				text-align: center;
+				position: absolute;
+				top: 50%;
+				left: 15%;
+				transform: translate(-50%, -50%);
+				width: 280px;
+			}
+
+			.outer-container img {
+				position: relative;
+				top: 5px;
+			}
+
+			.outer-container .no_network {
+				margin-right: 15px;
+				height: 25px;
+			}
+			
+			.outer-container h3 {
+				font-size: 14px;
+				text-align: center;
+				color: #5185c4;
+				margin-right: 15px;
+			}
+
+			.outer-container .warning {
+				height: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="outer-container">
+			<img src="no_network.png" class="no_network" alt="No Internet Connection">
+			<h3>Internet Connection Not Available</h3>
+		</div>
+	</body>
+</html>

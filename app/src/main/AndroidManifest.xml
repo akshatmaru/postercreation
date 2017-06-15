@@ -23,6 +23,12 @@
 
         <activity android:name=".NextActivity">
         </activity>
+
+        <activity android:name=".GalleryUtil"></activity>
+
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+
     </application>
 
 </manifest>

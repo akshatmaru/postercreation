@@ -6,22 +6,23 @@
     <RelativeLayout
         android:id="@+id/fill_rel"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="360dp"
         >
 
         <ImageView
             android:id="@+id/quote_bg_image"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:src="@drawable/blue"
-            android:scaleType="fitXY"
+            android:layout_height="360dp"
+            android:src="@drawable/ipad"
             />
 
         <TextView
             android:id="@+id/quote_text"
             android:textColor="#fff"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
+
 
     </RelativeLayout>
 
@@ -30,20 +31,20 @@
         android:layout_below="@+id/fill_rel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="5dp"
         >
 
         <Button
             android:id="@+id/blue_button"
             android:background="#0000ff"
-            android:layout_width="70dp"
-            android:layout_height="70dp" />
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
 
         <Button
             android:id="@+id/black_button"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:background="#000"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/blue_button"
@@ -54,16 +55,40 @@
             android:layout_toRightOf="@+id/black_button"
             android:layout_marginLeft="10dp"
             android:background="#ff0000"
-            android:layout_width="70dp"
-            android:layout_height="70dp" />
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
 
         <Button
             android:id="@+id/gold_button"
             android:layout_toRightOf="@+id/red_button"
             android:layout_marginLeft="10dp"
             android:background="#DAA520"
-            android:layout_width="70dp"
-            android:layout_height="70dp" />
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/left_align"
+            android:layout_toRightOf="@+id/gold_button"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/alignleft"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/center_align"
+            android:layout_toRightOf="@+id/left_align"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/aligncenter"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/right_align"
+            android:layout_toRightOf="@+id/center_align"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/alignright"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
 
     </RelativeLayout>
     
@@ -72,7 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/wall_rel"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
@@ -83,9 +108,27 @@
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:text="post"
         android:background="#7CFC00"
+        />
+
+    <Button
+        android:id="@+id/choose_image"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/post_image"
+        android:text="choose"
+        android:layout_marginLeft="5dp"
+        android:background="#7CFC00"
+        />
+
+    <ImageView
+        android:id="@+id/getImage"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         />
 
 </RelativeLayout>
